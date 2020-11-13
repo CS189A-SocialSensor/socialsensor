@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import './Styles/navBar.css';
+import './Styles/login.css';
 import './Styles/App.css';
 
 import NavBar from './Components/navBar';
@@ -9,7 +10,6 @@ import Login from './Pages/login';
 import UserProfile from './Pages/userProfile';
 import Home from './Pages/home';
 import VideoCall from './Pages/videoCall';
-
 
 
 export class App extends Component {
