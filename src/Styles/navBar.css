@@ -1,0 +1,33 @@
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background: #4285F4;
+    color: white;
+}
+
+nav h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-links .link {
+    text-decoration: none;
+    
+}
+.nav-links .link li {
+    color: white;
+    font-size: 0.8em;
+}
+

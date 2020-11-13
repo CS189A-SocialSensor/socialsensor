@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	background-color: rbga(255,255,255,0);
+	color: #454545;
+}
+
+.page-container {
+	margin-left: 15%;
+	margin-right: 15%;
+	/*padding-bottom: 48px;*/
+} 
