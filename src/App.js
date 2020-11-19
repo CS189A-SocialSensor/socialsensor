@@ -5,6 +5,7 @@ import './Styles/navBar.css';
 import './Styles/login.css';
 import './Styles/App.css';
 import './Styles/home.css';
+import './Styles/videoCall.css';
 
 import NavBar from './Components/navBar';
 import Login from './Pages/login';
