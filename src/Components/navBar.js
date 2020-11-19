@@ -18,9 +18,6 @@ export class NavBar extends Component {
             <nav>
                 <h1>SocialSensor</h1>
                 <ul className="nav-links">
-                    <Link to="/about" className="link">
-                        <li>About</li>
-                    </Link>
                     <Link to="/userprofile" className="link">
                         <li>Profile</li>
                     </Link>
