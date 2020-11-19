@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/socialsensor/static/css/main.12a9047c.chunk.css",
+    "main.js": "/socialsensor/static/js/main.2eaa0e5e.chunk.js",
+    "main.js.map": "/socialsensor/static/js/main.2eaa0e5e.chunk.js.map",
+    "runtime-main.js": "/socialsensor/static/js/runtime-main.f59237f3.js",
+    "runtime-main.js.map": "/socialsensor/static/js/runtime-main.f59237f3.js.map",
+    "static/js/2.11f43282.chunk.js": "/socialsensor/static/js/2.11f43282.chunk.js",
+    "static/js/2.11f43282.chunk.js.map": "/socialsensor/static/js/2.11f43282.chunk.js.map",
+    "static/js/3.c30ee150.chunk.js": "/socialsensor/static/js/3.c30ee150.chunk.js",
+    "static/js/3.c30ee150.chunk.js.map": "/socialsensor/static/js/3.c30ee150.chunk.js.map",
+    "index.html": "/socialsensor/index.html",
+    "static/css/main.12a9047c.chunk.css.map": "/socialsensor/static/css/main.12a9047c.chunk.css.map",
+    "static/js/2.11f43282.chunk.js.LICENSE.txt": "/socialsensor/static/js/2.11f43282.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f59237f3.js",
+    "static/js/2.11f43282.chunk.js",
+    "static/css/main.12a9047c.chunk.css",
+    "static/js/main.2eaa0e5e.chunk.js"
+  ]
+}
