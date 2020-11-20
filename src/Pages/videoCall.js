@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Video from 'twilio-video';
+import VideoChat from '../Components/Video/VideoChat';
 
 
 export class VideoCall extends Component {
@@ -11,12 +12,7 @@ export class VideoCall extends Component {
     render() {
         return(
             <div className="page-container">
-                <div className="participant-view">
-                    other participant's video
-                </div>
-                <div className="self-view">
-                    your video
-                </div>
+                <VideoChat />
             </div>
         );
 

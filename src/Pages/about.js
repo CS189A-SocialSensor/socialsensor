@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Login from './login';
 
 export class About extends Component {
     render() {

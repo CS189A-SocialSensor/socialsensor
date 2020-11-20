@@ -1,0 +1,80 @@
+import React, { useState, useCallback } from 'react';
+import Lobby from './Lobby';
+
+/*
+This component is going to show a lobby or 
+a room based on whether the user has entered a username 
+and room name.
+
+Need to store the following..
+- username for the user joining the chat
+- room name for the room
+- their access token 
+
+*/
+
+const VideoChat = () => {
+    const [username, setUsername] = useState('');
+    const [roomName, setRoomName] = useState('');
+    const [token, setToken] = useState(null);
+
+    // called when user enters their username
+    const handleUsernameChange = useCallback(event => {
+        setUsername(event.target.value);
+      }, []);
+    
+    // called when user enters the room name
+    const handleRoomNameChange = useCallback(event => {
+        setRoomName(event.target.value);
+      }, []);
+
+
+    // sends username & room name to server
+    // for exchange for an access token so that 
+    // they can enter the room
+    const handleSubmit = useCallback(async event => {
+        event.preventDefault();
+        const data = await fetch('/video/token', {
+            method: 'POST',
+            body: JSON.stringify({
+            identity: username,
+            room: roomName
+            }),
+            headers: {
+            'Content-Type': 'application/json'
+            }
+        }).then(res => res.json());
+     setToken(data.token);
+    }, [username, roomName]);
+
+    // ejects user from a room and returns them to the lobby
+    const handleLogout = useCallback(event => {
+        setToken(null);
+      }, []);
+
+    let render;
+    if (token) {
+      //render the lobby 
+      render = (
+        <div>
+          <p>Username: {username}</p>
+          <p>Room name: {roomName}</p>
+          <p>Token: {token}</p>
+        </div>
+      );
+    } else {
+      render = (
+        <Lobby
+          username={username}
+          roomName={roomName}
+          handleUsernameChange={handleUsernameChange}
+          handleRoomNameChange={handleRoomNameChange}
+          handleSubmit={handleSubmit}
+        />
+      );
+    }
+
+    return render; 
+};
+
+export default VideoChat;

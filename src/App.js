@@ -1,18 +1,19 @@
 import React, {Component} from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import './Styles/navBar.css';
-import './Styles/login.css';
+import './Styles/NavBar.css';
+import './Styles/Login.css';
 import './Styles/App.css';
-import './Styles/home.css';
-import './Styles/videoCall.css';
+import './Styles/Home.css';
+import './Styles/VideoCall.css';
+import './Styles/Lobby.css';
 
-import NavBar from './Components/navBar';
-import Login from './Pages/login';
-import UserProfile from './Pages/userProfile';
-import Home from './Pages/home';
-import VideoCall from './Pages/videoCall';
-import About from './Pages/about';
+import NavBar from './Components/NavBar';
+import Login from './Pages/Login';
+import UserProfile from './Pages/UserProfile';
+import Home from './Pages/Home';
+import VideoCall from './Pages/VideoCall';
+import About from './Pages/About';
 
 
 export class App extends Component {
