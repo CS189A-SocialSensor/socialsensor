@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import Lobby from './Lobby';
+import Room from './Room'
 
 /*
 This component is going to show a lobby or 
@@ -56,11 +57,7 @@ const VideoChat = () => {
     if (token) {
       //render the lobby 
       render = (
-        <div>
-          <p>Username: {username}</p>
-          <p>Room name: {roomName}</p>
-          <p>Token: {token}</p>
-        </div>
+        <Room roomName={roomName} token={token} handleLogout={handleLogout}/>
       );
     } else {
       render = (
