@@ -11,7 +11,6 @@ Need to store the following..
 - username for the user joining the chat
 - room name for the room
 - their access token 
-
 */
 
 const VideoChat = () => {
@@ -34,19 +33,23 @@ const VideoChat = () => {
     // for exchange for an access token so that 
     // they can enter the room
     const handleSubmit = useCallback(async event => {
-        event.preventDefault();
-        const data = await fetch('/video/token', {
-            method: 'POST',
-            body: JSON.stringify({
-            identity: username,
-            room: roomName
-            }),
-            headers: {
-            'Content-Type': 'application/json'
-            }
-        }).then(res => res.json());
-     setToken(data.token);
-    }, [username, roomName]);
+      event.preventDefault();
+      console.log("in handleSubmit")
+
+      // this is where the error is
+      const data = await fetch('/video/token', {
+          method: 'POST',
+          body: JSON.stringify({
+          identity: username,
+          room: roomName
+          }),
+          headers: {
+          'Content-Type': 'application/json'
+          }
+      }).then(res => res.text()) // sending back html instead of json
+        .then(text => console.log(text)); 
+      setToken(data.token);
+    }, [roomName, username]);
 
     // ejects user from a room and returns them to the lobby
     const handleLogout = useCallback(event => {
