@@ -48,6 +48,7 @@ const VideoChat = () => {
           }
       }).then(res => res.text()) // sending back html instead of json
         .then(text => console.log(text)); 
+        console.log("data is..", data)
       setToken(data.token);
     }, [roomName, username]);
 

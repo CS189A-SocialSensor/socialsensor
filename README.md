@@ -1,3 +1,22 @@
+# SocialSensor with Twilio Video Chat
+
+## Getting Started
+
+Download the repository onto your local machine.
+```
+git clone https://github.com/CS189A-SocialSensor/socialsensor.git
+cd socialsensor
+```
+Install dependencies.
+```
+npm install
+```
+Create a `.env ` file by coping the `.env.example` and enter your 
+Twilio credentials.
+```
+cp .env.example .env
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
